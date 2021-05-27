@@ -37,15 +37,19 @@
                   <div class="tools">
                     <ul class="publishing-tools list-inline">
                      <li><label for="upload-photo"><i class="ion-images"></i></label>
-                    <input type="file" name="file" id="upload-photo" /></li>
-                     
+                    <input  onchange="readURL(this)" type="file" name="file" id="upload-photo" />
+                  </li>
+
                      
                     </ul>
                     <button  class="btn btn-primary pull-right">Publish</button>
                   </div>
+
                 </div>
                 </form>
+
                 </div>
+                <img  id="blah" src=""  class="hidden"  style="padding: 20px;width: 150px; height: 150px;" >
             </div><!-- Post Create Box End-->
 
 

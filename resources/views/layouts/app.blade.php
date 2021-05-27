@@ -98,6 +98,21 @@ label {
     <script src="{{ asset('js/jquery.sticky-kit.min.js')}}"></script>
     <script src="{{ asset('js/jquery.scrollbar.min.js')}}"></script>
     <script src="{{ asset('js/script.js')}}"></script>
- 
+ <script type="text/javascript">
+   function readURL(input) {
+        document.getElementById("blah").classList.remove('hidden');
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                $('#blah')
+                    .attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+
+       }
+ </script>
   </body>
 </html>
