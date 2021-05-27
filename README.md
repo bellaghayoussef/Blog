@@ -9,7 +9,7 @@
 
 <h2>2-blog</h2>
 <div style="text-align: center;">
-	<img style="    width: 900px;" src="public/images/login.png">
+	<img style="    width: 900px;" src="public/images/blog.png">
 <br><br><br><br>
 
 </div>
