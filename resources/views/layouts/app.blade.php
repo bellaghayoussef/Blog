@@ -66,6 +66,7 @@ label {
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right main-menu">
            @if(Auth::user())
+            <li class="dropdown"><a class="dropdown-item"  href="{{route('home')}}">Blog</a></li>
               <li class="dropdown"> <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -76,6 +77,7 @@ label {
                                         @csrf
                                     </form></li>
         @endif
+
             </ul>
           
           </div><!-- /.navbar-collapse -->
